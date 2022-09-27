@@ -1,4 +1,4 @@
-FROM python:3
+FROM python:3.8.5
 
 WORKDIR /code
 COPY requirements.txt .
@@ -11,4 +11,4 @@ COPY view.py .
 
 ENV FLASK_APP=wsgi.py
 
-CMD  flask run -h 0.0.0.0 -p 80
+CMD flask run -h 0.0.0.0 -p 80
